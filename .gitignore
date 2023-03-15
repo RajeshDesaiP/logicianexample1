@@ -1,0 +1,5 @@
+Country_state/obj/
+**/[Dd]ebug
+**/*.db
+**/*.obj
+**/*.dll
