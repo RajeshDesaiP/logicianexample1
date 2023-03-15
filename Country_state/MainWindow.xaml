@@ -1,0 +1,16 @@
+﻿
+    <Window x:Class="Country_state.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Country_state"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Margin="0,0,-556.6,-684.2">
+       
+        <ComboBox x:Name="State" HorizontalAlignment="Left" Margin="284,40,0,0" VerticalAlignment="Top" Width="120" ItemsSource="{Binding Source={StaticResource States}, XPath=state, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="@name"/>
+        <ComboBox x:Name="City" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="101,40,0,0" SelectionChanged="comboBox1_SelectionChanged" ItemsSource="{Binding Source={StaticResource States}, XPath=state, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" DisplayMemberPath="@name"/>
+
+    </Grid>
+</Window>

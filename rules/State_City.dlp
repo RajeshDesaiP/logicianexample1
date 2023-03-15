@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DecisionLogicProject connection="localhost:11000">
+  <DataSet debug="0">
+    <DataSetName>Cities.xml</DataSetName>
+    <RelativePath></RelativePath>
+  </DataSet>
+  <Compiler>
+    <Javascript></Javascript>
+    <Python></Python>
+  </Compiler>
+  <Tokens>
+    <Token id="1"></Token>
+    <Token id="6">AndhraPradesh</Token>
+    <Token id="7">Bangalore</Token>
+    <Token id="9">Hubli</Token>
+    <Token id="5">Karnataka</Token>
+    <Token id="10">Mangalore</Token>
+    <Token id="8">Mysore</Token>
+    <Token id="2">NULL</Token>
+    <Token id="12">Nellore</Token>
+    <Token id="11">Vishakapatnam</Token>
+  </Tokens>
+</DecisionLogicProject>

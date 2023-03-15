@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tables>
+  <Table name="Cities" getall="true">
+    <Inputs>
+      <Attr>States</Attr>
+      <Value operation="1">Karnataka</Value>
+      <Value operation="1">AndhraPradesh</Value>
+      <Value/>
+      <Value/>
+      <Value/>
+      <Value/>
+      <Value/>
+      <Value/>
+      <Value/>
+      <Value/>
+    </Inputs>
+    <Outputs>
+      <Attr>Cities</Attr>
+      <Value operation="1">Bangalore|Mysore|Hubli|Mangalore</Value>
+      <Value operation="1">Vishakapatnam|Nellore</Value>
+      <Value/>
+      <Value/>
+      <Value/>
+      <Value/>
+      <Value/>
+      <Value/>
+      <Value/>
+      <Value/>
+    </Outputs>
+    <Status>
+      <RuleStatus enabled="true"/>
+      <RuleStatus enabled="true"/>
+      <RuleStatus enabled="true"/>
+      <RuleStatus enabled="true"/>
+      <RuleStatus enabled="true"/>
+      <RuleStatus enabled="true"/>
+      <RuleStatus enabled="true"/>
+      <RuleStatus enabled="true"/>
+      <RuleStatus enabled="true"/>
+      <RuleStatus enabled="true"/>
+    </Status>
+  </Table>
+</Tables>
