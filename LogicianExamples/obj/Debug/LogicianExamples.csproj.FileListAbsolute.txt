@@ -1,0 +1,14 @@
+D:\repositories\logician-trials\LogicianExamples\LogicianExamples\bin\Debug\LogicianExamples.exe.config
+D:\repositories\logician-trials\LogicianExamples\LogicianExamples\bin\Debug\LogicianExamples.exe
+D:\repositories\logician-trials\LogicianExamples\LogicianExamples\bin\Debug\LogicianExamples.pdb
+D:\repositories\logician-trials\LogicianExamples\LogicianExamples\obj\Debug\LogicianExamples.csprojResolveAssemblyReference.cache
+D:\repositories\logician-trials\LogicianExamples\LogicianExamples\obj\Debug\MainWindow.g.cs
+D:\repositories\logician-trials\LogicianExamples\LogicianExamples\obj\Debug\App.g.cs
+D:\repositories\logician-trials\LogicianExamples\LogicianExamples\obj\Debug\LogicianExamples_MarkupCompile.cache
+D:\repositories\logician-trials\LogicianExamples\LogicianExamples\obj\Debug\LogicianExamples_MarkupCompile.lref
+D:\repositories\logician-trials\LogicianExamples\LogicianExamples\obj\Debug\MainWindow.baml
+D:\repositories\logician-trials\LogicianExamples\LogicianExamples\obj\Debug\LogicianExamples.g.resources
+D:\repositories\logician-trials\LogicianExamples\LogicianExamples\obj\Debug\LogicianExamples.Properties.Resources.resources
+D:\repositories\logician-trials\LogicianExamples\LogicianExamples\obj\Debug\LogicianExamples.csproj.GenerateResource.Cache
+D:\repositories\logician-trials\LogicianExamples\LogicianExamples\obj\Debug\LogicianExamples.exe
+D:\repositories\logician-trials\LogicianExamples\LogicianExamples\obj\Debug\LogicianExamples.pdb
