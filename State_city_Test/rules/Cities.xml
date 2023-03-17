@@ -2,13 +2,13 @@
 <Tables>
   <Table name="Cities" getall="true">
     <Inputs>
-      <Attr>States</Attr>
+      <Attr>State</Attr>
       <Value operation="1">Karnataka</Value>
-      <Value operation="1">AndhraPradesh</Value>
-      <Value/>
-      <Value/>
-      <Value/>
-      <Value/>
+      <Value operation="1">Andhra Pradesh</Value>
+      <Value operation="1">Tamil Nadu</Value>
+      <Value operation="1">Sikkim</Value>
+      <Value operation="1">Delhi</Value>
+      <Value operation="1">Pondicherry</Value>
       <Value/>
       <Value/>
       <Value/>
@@ -18,10 +18,10 @@
       <Attr>Cities</Attr>
       <Value operation="1">Bangalore|Mysore|Hubli|Mangalore</Value>
       <Value operation="1">Vishakapatnam|Nellore</Value>
-      <Value/>
-      <Value/>
-      <Value/>
-      <Value/>
+      <Value operation="1">Vishakapatnam|Nellore</Value>
+      <Value operation="1">Vishakapatnam|Nellore</Value>
+      <Value operation="1">Vishakapatnam|Nellore</Value>
+      <Value operation="1">Vishakapatnam|Nellore</Value>
       <Value/>
       <Value/>
       <Value/>

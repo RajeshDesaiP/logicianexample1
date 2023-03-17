@@ -1,10 +1,9 @@
-﻿<Application x:Class="Country_state.App"
+﻿<Application x:Class="State_city_Test.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Country_state"
+             xmlns:local="clr-namespace:State_city_Test"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <XmlDataProvider x:Key="States" XPath="States" Source="State.xml"/>
-        <XmlDataProvider x:Key="Cities" XPath="Cities" Source="city.xml"/>
     </Application.Resources>
 </Application>

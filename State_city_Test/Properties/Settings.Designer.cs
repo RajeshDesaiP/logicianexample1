@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Country_state.Properties
+namespace State_city_Test.Properties
 {
 
 

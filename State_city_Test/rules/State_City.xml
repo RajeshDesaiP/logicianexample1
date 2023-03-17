@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tables debugtables="" debug="false" connection="localhost:11000">
+  <Table name="Cities" getall="true">
+    <Inputs>
+      <Attr>State</Attr>
+      <Value id="5" operation="1">Karnataka</Value>
+      <Value id="6" operation="1">Andhra Pradesh</Value>
+      <Value id="7" operation="1">Tamil Nadu</Value>
+      <Value id="8" operation="1">Sikkim</Value>
+      <Value id="9" operation="1">Delhi</Value>
+      <Value id="10" operation="1">Pondicherry</Value>
+    </Inputs>
+    <Outputs>
+      <Attr>Cities</Attr>
+      <Value id="11,12,13,14" operation="1">Bangalore|Mysore|Hubli|Mangalore</Value>
+      <Value id="15,16" operation="1">Vishakapatnam|Nellore</Value>
+      <Value id="15,16" operation="1">Vishakapatnam|Nellore</Value>
+      <Value id="15,16" operation="1">Vishakapatnam|Nellore</Value>
+      <Value id="15,16" operation="1">Vishakapatnam|Nellore</Value>
+      <Value id="15,16" operation="1">Vishakapatnam|Nellore</Value>
+    </Outputs>
+  </Table>
+  <Table name="States" getall="true">
+    <Inputs>
+      <Attr/>
+      <Value/>
+      <Value/>
+      <Value/>
+      <Value/>
+      <Value/>
+      <Value/>
+    </Inputs>
+    <Outputs>
+      <Attr>StateName</Attr>
+      <Value id="5" operation="1">Karnataka</Value>
+      <Value id="6" operation="1">Andhra Pradesh</Value>
+      <Value id="7" operation="1">Tamil Nadu</Value>
+      <Value id="8" operation="1">Sikkim</Value>
+      <Value id="9" operation="1">Delhi</Value>
+      <Value id="10" operation="1">Pondicherry</Value>
+    </Outputs>
+  </Table>
+  <Scripting>
+    <Python></Python>
+    <Javascript></Javascript>
+  </Scripting>
+</Tables>

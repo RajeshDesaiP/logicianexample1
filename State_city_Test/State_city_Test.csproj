@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8E6119F7-3653-40E6-B685-3D4944A5273B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>State_city_Test</RootNamespace>
+    <AssemblyName>State_city_Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EDSEngine">
+      <HintPath>..\..\..\..\EDSEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="EDSEngineNET, Version=1.0.8476.18288, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\dll\EDSEngineNET.dll</HintPath>
+    </Reference>
+    <Reference Include="ROMNET, Version=1.0.8476.18293, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\dll\ROMNET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="bin\x64\Debug\State_city_Test.exe.config" />
+    <None Include="bin\x64\Debug\State_city_Test.vshost.exe.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="rules\State_City.dlp" />
+    <None Include="submodule\EDSEngineNET\Debug\EDSEngineNET2013.vcxprojResolveAssemblyReference.cache" />
+    <None Include="submodule\EDSEngineNET\EDSEngineNET2013.vcxproj" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\app.res" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\AssemblyInfo.obj" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\EDSEngine.obj" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\EDSEngineNET.Build.CppClean.log" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\EDSEngineNET.dll.metagen" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\EDSEngineNET.pch" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\EDSEngineNET.tlog\CL.command.1.tlog" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\EDSEngineNET.tlog\CL.read.1.tlog" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\EDSEngineNET.tlog\CL.write.1.tlog" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\EDSEngineNET.tlog\EDSEngineNET.lastbuildstate" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\EDSEngineNET.tlog\link.command.1.tlog" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\EDSEngineNET.tlog\link.read.1.tlog" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\EDSEngineNET.tlog\link.write.1.tlog" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\EDSEngineNET.tlog\metagen.read.1.tlog" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\EDSEngineNET.tlog\metagen.write.1.tlog" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\EDSEngineNET.tlog\MSXML6.DLL.bi" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\EDSEngineNET.tlog\rc.command.1.tlog" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\EDSEngineNET.tlog\rc.read.1.tlog" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\EDSEngineNET.tlog\rc.write.1.tlog" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\EDSEngineNET.tlog\TZRES.DLL.bi" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\EDSEngineNET2013.log" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\Marshal.obj" />
+    <None Include="submodule\EDSEngineNET\x64\Debug\Stdafx.obj" />
+    <None Include="submodule\EDSEngine\Debug\ashost.obj" />
+    <None Include="submodule\EDSEngine\Debug\Bimapper.obj" />
+    <None Include="submodule\EDSEngine\Debug\Decode.obj" />
+    <None Include="submodule\EDSEngine\Debug\EDSEngine.idb" />
+    <None Include="submodule\EDSEngine\Debug\EDSEngine.obj" />
+    <None Include="submodule\EDSEngine\Debug\EDSEngine.tlog\CL.command.1.tlog" />
+    <None Include="submodule\EDSEngine\Debug\EDSEngine.tlog\CL.read.1.tlog" />
+    <None Include="submodule\EDSEngine\Debug\EDSEngine.tlog\CL.write.1.tlog" />
+    <None Include="submodule\EDSEngine\Debug\EDSEngine.tlog\EDSEngine.lastbuildstate" />
+    <None Include="submodule\EDSEngine\Debug\EDSEngine.tlog\unsuccessfulbuild" />
+    <None Include="submodule\EDSEngine\Debug\EDSEngine2013.log" />
+    <None Include="submodule\EDSEngine\Debug\RuleTable.obj" />
+    <None Include="submodule\EDSEngine\Debug\Source.obj" />
+    <None Include="submodule\EDSEngine\Debug\stdafx.obj" />
+    <None Include="submodule\EDSEngine\Debug\TableSet.obj" />
+    <None Include="submodule\EDSEngine\Debug\utilities.obj" />
+    <None Include="submodule\EDSEngine\EDSEngine.cbp" />
+    <None Include="submodule\EDSEngine\EDSEngine.pro" />
+    <None Include="submodule\EDSEngine\EDSEngine.project" />
+    <None Include="submodule\EDSEngine\EDSEngine.workspace" />
+    <None Include="submodule\EDSEngine\EDSEngine2013.vcxproj" />
+    <None Include="submodule\EDSEngine\Makefile" />
+    <None Include="submodule\EDSEngine\x64\Debug\ashost.obj" />
+    <None Include="submodule\EDSEngine\x64\Debug\Bimapper.obj" />
+    <None Include="submodule\EDSEngine\x64\Debug\Decode.obj" />
+    <None Include="submodule\EDSEngine\x64\Debug\EDSEngine.Build.CppClean.log" />
+    <None Include="submodule\EDSEngine\x64\Debug\EDSEngine.lib" />
+    <None Include="submodule\EDSEngine\x64\Debug\EDSEngine.obj" />
+    <None Include="submodule\EDSEngine\x64\Debug\EDSEngine.tlog\CL.command.1.tlog" />
+    <None Include="submodule\EDSEngine\x64\Debug\EDSEngine.tlog\CL.read.1.tlog" />
+    <None Include="submodule\EDSEngine\x64\Debug\EDSEngine.tlog\CL.write.1.tlog" />
+    <None Include="submodule\EDSEngine\x64\Debug\EDSEngine.tlog\EDSEngine.lastbuildstate" />
+    <None Include="submodule\EDSEngine\x64\Debug\EDSEngine.tlog\Lib-link.read.1.tlog" />
+    <None Include="submodule\EDSEngine\x64\Debug\EDSEngine.tlog\Lib-link.write.1.tlog" />
+    <None Include="submodule\EDSEngine\x64\Debug\EDSEngine.tlog\lib.command.1.tlog" />
+    <None Include="submodule\EDSEngine\x64\Debug\EDSEngine2013.log" />
+    <None Include="submodule\EDSEngine\x64\Debug\KnowledgeBase.obj" />
+    <None Include="submodule\EDSEngine\x64\Debug\RuleTable.obj" />
+    <None Include="submodule\EDSEngine\x64\Debug\Source.obj" />
+    <None Include="submodule\EDSEngine\x64\Debug\stdafx.obj" />
+    <None Include="submodule\EDSEngine\x64\Debug\TableSet.obj" />
+    <None Include="submodule\EDSEngine\x64\Debug\utilities.obj" />
+    <None Include="submodule\RelationalObjectModel\Debug\LinearEngine.obj" />
+    <None Include="submodule\RelationalObjectModel\Debug\Relation.D246970C.tlog\CL.command.1.tlog" />
+    <None Include="submodule\RelationalObjectModel\Debug\Relation.D246970C.tlog\CL.read.1.tlog" />
+    <None Include="submodule\RelationalObjectModel\Debug\Relation.D246970C.tlog\CL.write.1.tlog" />
+    <None Include="submodule\RelationalObjectModel\Debug\Relation.D246970C.tlog\RelationalObjectModel.lastbuildstate" />
+    <None Include="submodule\RelationalObjectModel\Debug\Relation.D246970C.tlog\unsuccessfulbuild" />
+    <None Include="submodule\RelationalObjectModel\Debug\Relational Object Model 2013.log" />
+    <None Include="submodule\RelationalObjectModel\Debug\RelationalObjectModel.idb" />
+    <None Include="submodule\RelationalObjectModel\Debug\ROM.obj" />
+    <None Include="submodule\RelationalObjectModel\Debug\ROMDictionary.obj" />
+    <None Include="submodule\RelationalObjectModel\Debug\stdafx.obj" />
+    <None Include="submodule\RelationalObjectModel\Makefile" />
+    <None Include="submodule\RelationalObjectModel\Relational Object Model 2013.vcxproj" />
+    <None Include="submodule\RelationalObjectModel\RelationalObjectModel.cbp" />
+    <None Include="submodule\RelationalObjectModel\RelationalObjectModel.pro" />
+    <None Include="submodule\RelationalObjectModel\x64\Debug\LinearEngine.obj" />
+    <None Include="submodule\RelationalObjectModel\x64\Debug\Relation.D246970C.tlog\CL.command.1.tlog" />
+    <None Include="submodule\RelationalObjectModel\x64\Debug\Relation.D246970C.tlog\CL.read.1.tlog" />
+    <None Include="submodule\RelationalObjectModel\x64\Debug\Relation.D246970C.tlog\CL.write.1.tlog" />
+    <None Include="submodule\RelationalObjectModel\x64\Debug\Relation.D246970C.tlog\Lib-link.read.1.tlog" />
+    <None Include="submodule\RelationalObjectModel\x64\Debug\Relation.D246970C.tlog\Lib-link.write.1.tlog" />
+    <None Include="submodule\RelationalObjectModel\x64\Debug\Relation.D246970C.tlog\lib.command.1.tlog" />
+    <None Include="submodule\RelationalObjectModel\x64\Debug\Relation.D246970C.tlog\RelationalObjectModel.lastbuildstate" />
+    <None Include="submodule\RelationalObjectModel\x64\Debug\Relational Object Model 2013.log" />
+    <None Include="submodule\RelationalObjectModel\x64\Debug\RelationalObjectModel.Build.CppClean.log" />
+    <None Include="submodule\RelationalObjectModel\x64\Debug\RelationalObjectModel.lib" />
+    <None Include="submodule\RelationalObjectModel\x64\Debug\ROM.obj" />
+    <None Include="submodule\RelationalObjectModel\x64\Debug\ROMDictionary.obj" />
+    <None Include="submodule\RelationalObjectModel\x64\Debug\ROMNode.obj" />
+    <None Include="submodule\RelationalObjectModel\x64\Debug\stdafx.obj" />
+    <None Include="submodule\RelationalObjectModel\x64\Debug\utilities.obj" />
+    <None Include="submodule\ROMNET\ROMNET2013.vcxproj" />
+    <None Include="submodule\ROMNET\x64\Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj" />
+    <None Include="submodule\ROMNET\x64\Debug\app.res" />
+    <None Include="submodule\ROMNET\x64\Debug\AssemblyInfo.obj" />
+    <None Include="submodule\ROMNET\x64\Debug\Marshal.obj" />
+    <None Include="submodule\ROMNET\x64\Debug\ROMNET.Build.CppClean.log" />
+    <None Include="submodule\ROMNET\x64\Debug\ROMNET.obj" />
+    <None Include="submodule\ROMNET\x64\Debug\ROMNET.pch" />
+    <None Include="submodule\ROMNET\x64\Debug\ROMNET.tlog\CL.command.1.tlog" />
+    <None Include="submodule\ROMNET\x64\Debug\ROMNET.tlog\CL.read.1.tlog" />
+    <None Include="submodule\ROMNET\x64\Debug\ROMNET.tlog\CL.write.1.tlog" />
+    <None Include="submodule\ROMNET\x64\Debug\ROMNET.tlog\link.command.1.tlog" />
+    <None Include="submodule\ROMNET\x64\Debug\ROMNET.tlog\link.read.1.tlog" />
+    <None Include="submodule\ROMNET\x64\Debug\ROMNET.tlog\link.write.1.tlog" />
+    <None Include="submodule\ROMNET\x64\Debug\ROMNET.tlog\metagen.read.1.tlog" />
+    <None Include="submodule\ROMNET\x64\Debug\ROMNET.tlog\metagen.write.1.tlog" />
+    <None Include="submodule\ROMNET\x64\Debug\ROMNET.tlog\MSXML6.DLL.bi" />
+    <None Include="submodule\ROMNET\x64\Debug\ROMNET.tlog\rc.command.1.tlog" />
+    <None Include="submodule\ROMNET\x64\Debug\ROMNET.tlog\rc.read.1.tlog" />
+    <None Include="submodule\ROMNET\x64\Debug\ROMNET.tlog\rc.write.1.tlog" />
+    <None Include="submodule\ROMNET\x64\Debug\ROMNET.tlog\ROMNET.lastbuildstate" />
+    <None Include="submodule\ROMNET\x64\Debug\ROMNET.tlog\ROMNET.write.1u.tlog" />
+    <None Include="submodule\ROMNET\x64\Debug\ROMNET.tlog\TZRES.DLL.bi" />
+    <None Include="submodule\ROMNET\x64\Debug\ROMNET2013.log" />
+    <None Include="submodule\ROMNET\x64\Debug\ROMNET2013.vcxprojResolveAssemblyReference.cache" />
+    <None Include="submodule\ROMNET\x64\Debug\Stdafx.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="submodule\EDSEngineNET\Debug\EDSEngineNET.tlog\" />
+    <Folder Include="submodule\ROMNET\Debug\ROMNET.tlog\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\x64\Debug\State_city_Test.exe" />
+    <Content Include="bin\x64\Debug\State_city_Test.pdb" />
+    <Content Include="bin\x64\Debug\State_city_Test.vshost.exe" />
+    <Resource Include="rules\Cities.xml" />
+    <Resource Include="rules\States.xml" />
+    <Resource Include="rules\State_City.xml" />
+    <Content Include="submodule\EDSEngineNET\app.rc" />
+    <Content Include="submodule\EDSEngineNET\AssemblyInfo.cpp" />
+    <Content Include="submodule\EDSEngineNET\EDSEngine.cpp" />
+    <Content Include="submodule\EDSEngineNET\EDSEngine.h" />
+    <Content Include="submodule\EDSEngineNET\Marshal.cpp" />
+    <Content Include="submodule\EDSEngineNET\Marshal.h" />
+    <Content Include="submodule\ROMNET\app.rc" />
+    <Content Include="submodule\ROMNET\AssemblyInfo.cpp" />
+    <Content Include="submodule\ROMNET\Marshal.cpp" />
+    <Content Include="submodule\ROMNET\Marshal.h" />
+    <Resource Include="submodule\ROMNET\ReadMe.txt" />
+    <Content Include="submodule\ROMNET\resource.h" />
+    <Content Include="submodule\ROMNET\ROMNET.cpp" />
+    <Content Include="submodule\ROMNET\ROMNET.h" />
+    <Content Include="submodule\ROMNET\Stdafx.cpp" />
+    <Content Include="submodule\ROMNET\Stdafx.h" />
+    <Content Include="submodule\ROMNET\x64\Debug\.NETFramework,Version=v4.0.AssemblyAttributes.asm" />
+    <Content Include="submodule\ROMNET\x64\Debug\EDSEngineNET.dll" />
+    <Content Include="submodule\ROMNET\x64\Debug\EDSEngineNET.pdb" />
+    <Content Include="submodule\ROMNET\x64\Debug\msxml6.tlh" />
+    <Content Include="submodule\ROMNET\x64\Debug\msxml6.tli" />
+    <Content Include="submodule\ROMNET\x64\Debug\ROMNET.dll" />
+    <Content Include="submodule\ROMNET\x64\Debug\ROMNET.pdb" />
+    <Content Include="submodule\ROMNET\x64\Debug\vc140.pdb" />
+    <Resource Include="submodule\RelationalObjectModel\CMakeLists.txt" />
+    <Content Include="submodule\RelationalObjectModel\Debug\msxml6.tlh" />
+    <Content Include="submodule\RelationalObjectModel\Debug\msxml6.tli" />
+    <Content Include="submodule\RelationalObjectModel\Debug\RelationalObjectModel.pdb" />
+    <Content Include="submodule\RelationalObjectModel\LinearEngine.cpp" />
+    <Content Include="submodule\RelationalObjectModel\LinearEngine.h" />
+    <Content Include="submodule\RelationalObjectModel\ROM.cpp" />
+    <Content Include="submodule\RelationalObjectModel\ROMDictionary.cpp" />
+    <Content Include="submodule\RelationalObjectModel\ROMDictionary.h" />
+    <Content Include="submodule\RelationalObjectModel\ROMDictionaryAttribute.h" />
+    <Content Include="submodule\RelationalObjectModel\ROMInterfaces.h" />
+    <Content Include="submodule\RelationalObjectModel\ROMNode.cpp" />
+    <Content Include="submodule\RelationalObjectModel\ROMNode.h" />
+    <Content Include="submodule\RelationalObjectModel\Source.cpp" />
+    <Content Include="submodule\RelationalObjectModel\stdafx.cpp" />
+    <Content Include="submodule\RelationalObjectModel\stdafx.h" />
+    <Content Include="submodule\RelationalObjectModel\utilities.cpp" />
+    <Content Include="submodule\RelationalObjectModel\utilities.h" />
+    <Content Include="submodule\RelationalObjectModel\x64\Debug\msxml6.tlh" />
+    <Content Include="submodule\RelationalObjectModel\x64\Debug\msxml6.tli" />
+    <Content Include="submodule\RelationalObjectModel\x64\Debug\RelationalObjectModel.pdb" />
+    <Resource Include="submodule\EDSEngineNET\ReadMe.txt" />
+    <Content Include="submodule\EDSEngineNET\resource.h" />
+    <Content Include="submodule\EDSEngineNET\Stdafx.cpp" />
+    <Content Include="submodule\EDSEngineNET\Stdafx.h" />
+    <Content Include="submodule\EDSEngineNET\x64\Debug\.NETFramework,Version=v4.0.AssemblyAttributes.asm" />
+    <Content Include="submodule\EDSEngineNET\x64\Debug\EDSEngineNET.dll" />
+    <Content Include="submodule\EDSEngineNET\x64\Debug\EDSEngineNET.pdb" />
+    <Content Include="submodule\EDSEngineNET\x64\Debug\msxml6.tlh" />
+    <Content Include="submodule\EDSEngineNET\x64\Debug\msxml6.tli" />
+    <Content Include="submodule\EDSEngineNET\x64\Debug\vc140.pdb" />
+    <Content Include="submodule\EDSEngine\ashost.cpp" />
+    <Content Include="submodule\EDSEngine\ashost.h" />
+    <Content Include="submodule\EDSEngine\Bimapper.cpp" />
+    <Content Include="submodule\EDSEngine\Bimapper.h" />
+    <Resource Include="submodule\EDSEngine\CMakeLists.txt" />
+    <Content Include="submodule\EDSEngine\Debug\EDSEngine.pdb" />
+    <Content Include="submodule\EDSEngine\Debug\msxml6.tlh" />
+    <Content Include="submodule\EDSEngine\Debug\msxml6.tli" />
+    <Content Include="submodule\EDSEngine\Decode.cpp" />
+    <Content Include="submodule\EDSEngine\Decode.h" />
+    <Content Include="submodule\EDSEngine\EDSEngine.cpp" />
+    <Content Include="submodule\EDSEngine\EDSEngine2013.vcxproj.user" />
+    <Content Include="submodule\EDSEngine\IKnowledgeBase.h" />
+    <Content Include="submodule\EDSEngine\KnowledgeBase.cpp" />
+    <Content Include="submodule\EDSEngine\KnowledgeBase.h" />
+    <Content Include="submodule\EDSEngine\Numerics.h" />
+    <Resource Include="submodule\EDSEngine\ReadMe.txt" />
+    <Content Include="submodule\EDSEngine\RuleCell.h" />
+    <Content Include="submodule\EDSEngine\RuleTable.cpp" />
+    <Content Include="submodule\EDSEngine\RuleTable.h" />
+    <Content Include="submodule\EDSEngine\stdafx.cpp" />
+    <Content Include="submodule\EDSEngine\stdafx.h" />
+    <Content Include="submodule\EDSEngine\TableSet.cpp" />
+    <Content Include="submodule\EDSEngine\TableSet.h" />
+    <Content Include="submodule\EDSEngine\utilities.cpp" />
+    <Content Include="submodule\EDSEngine\utilities.h" />
+    <Content Include="submodule\EDSEngine\x64\Debug\EDSEngine.pdb" />
+    <Content Include="submodule\EDSEngine\x64\Debug\msxml6.tlh" />
+    <Content Include="submodule\EDSEngine\x64\Debug\msxml6.tli" />
+    <Content Include="submodule\EDSEngine\XMLWrapper.h" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
